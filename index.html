@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			div.container {
+				width: 80%;
+				border: 1px solid gray;
+				margin: 0 auto;
+			}
+
+			header {
+				padding-top: 1em;
+				color: white;
+				background-color: #1dc6e0;
+				clear: left;
+				text-align: center;
+			}
+
+			footer {
+				padding-top: 1em;
+
+				color: white;
+				background-color: #1dc6e0;
+				clear: left;
+				text-align: center;
+			}
+
+			/*nav {
+				background-color: #918D8E;
+				padding: 10px;
+			}
+
+			nav ul {
+				list-style-type: none;
+				padding: 0;
+				margin: 0;
+				overflow: hidden;
+				background-color: #918D8E;
+			}
+
+
+			/*nav ul {
+    list-style-type: none;
+    padding: 0;
+	margin: 0;
+	background-color: #918D8E;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	
+}
+
+			nav ul li {
+				float: left;
+				width: 25%;
+			}
+
+			ul a {
+				text-decoration: none;
+				color: #fff;
+			}
+*/
+.nav {
+  margin: 50px;
+  display: flex;
+  text-align: center;
+}
+ 
+ul {
+  list-style-type: none;
+}
+ 
+ 
+li:last-child {
+  border-right: none;
+}
+ 
+li a {
+  text-decoration: none;
+  color: white;
+  font: 25px/1 Helvetica, Verdana, sans-serif;
+  text-transform: uppercase;
+  line-height: 1.8em;
+  
+}
+
+li{
+   height: 45px;
+  flex-grow: 1;
+  background-color: rgb(50, 9, 234);
+   -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+ 
+li:hover {
+  color: black;
+   flex-grow: 2;
+  background-color: red;
+  
+}
+li.active a {
+  font-weight: bold;
+  color: #333;
+}
+			article {
+				width: 100%;
+				border-left: 1px solid gray;
+				padding: 1em;
+				overflow: hidden;
+				font-size: 20px;
+			}
+
+			/*div.main {}*/
+
+			.slideshow {
+				margin-top: 30px;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: space-around;
+			}
+
+			.slideshow a {
+				flex-basis: auto;
+
+			}
+
+			.cycle-slideshow img {
+				width: 50%;
+			}
+
+			 p:hover {
+				background-color: yellow;
+			}
+
+			h3:hover {
+				background-color: yellow;
+			}
+			.subscribe-button {
+				background-color: rgb(221, 228, 20);
+				color: rgb(49, 20, 235);
+				font-size: 25px;
+				border: 2px;
+				border-color: black;
+				padding-right: 16px;
+				padding-left: 16px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				border-radius: 4px;
+				cursor: pointer;
+				margin-right: 8px;
+				transition: opacity 0.15s;
+			}
+
+			button :hover {
+				background-color: blue;
+				color: white;
+			}
+		</style>
+
+	</head>
+
+	<body>
+
+		<div class="container">
+
+			<header>
+				<h1>My Activities Slideshow</h1>
+				
+				<nav>
+					<ul class="nav">
+						<li><a href="#">Gardening</a></li>
+						<li><a href="#">Swimming</a></li>
+						<li><a href="#">Jogging</a></li>
+						<li><a href="#">Taichi</a></li>
+					</ul>
+				</nav>
+			</header>
+			<div class="main">
+
+
+				<article>
+					<p>Testing hover to highlight the line...</p>
+					<h3>Slideshow testing page</h3>
+
+					
+				</article>
+			</div>
+	<!-- codes for slideshow-->
+			<div class="slideshow">
+				<div class="cycle-slideshow">
+					<img src="images/cat.jpg" alt="image">
+					<img src="images/dog.jpg" alt="image" height="100%">
+					<img src="images/cat2.jpg" alt="image">
+				</div>
+			</div>
+			<article>
+				
+			</article>
+			<footer>
+				<button class="subscribe-button">
+					<a href="index.html" target="_blank">
+						Back to Main Page
+					</a>
+
+				</button>
+
+			</footer>
+
+		</div>
+		<!--codes for slideshow -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script src="https://malsup.github.io/jquery.cycle2.js"></script>
+
+
+	</body>
+
+</html>
